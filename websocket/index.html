@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+ 
+
+<html>
+<head>
+  <title>Interface jeu</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Materialize: Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link rel="stylesheet" type="text/css" href="../Projet/css/stylesMenu.css">
+ <link rel="stylesheet" type="text/css" href="styles.css">
+<body>
+  <header>
+    <nav   id="menu" class="nav-wraper"><!---->
+
+      
+      <a href="#index.html"> <img  id="logo" src="https://cdn.pixabay.com/photo/2014/03/25/15/24/wolf-296748_1280.png" alt="Le logo."></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="../Projet/html/index.html">Accueil</a></li>
+        <li><a href="./déconnexion.html">Déconnexion</a></li>
+      </ul>
+    
+  </nav>
+</header>
+<div id="imagefondJour">
+  <div class="page">
+    <div id="font">
+  
+    <div id="boxJoueurs"></div>
+    <div class= "boxDeDiscussion">
+      
+        <div id="contenu"></div>
+
+        <div id="chat" class="scroll Ascroll"></div>
+        <div id="ecriture">
+            <form method="post" id="chatForm" onSubmit="return false;">
+                <input type="text" name="pseudo" id="nomChat" placeholder="Message" size="30" maxlength="100" />
+                <input id="boutonChat" type="button" value="envoyer">
+            </form>
+      
+          <form method="post" class="invisible" >
+                <input type="text" name="pseudo" id="nomJeu" placeholder="Jeu" size="30" maxlength="10" />
+                <input id="boutonJeu" type="button" value="Bouton cliquer">
+            </form>
+      
+        </div>
+      
+    </div>
+
+  <div class="invisible"> <!--Grand jeu-->
+  Le superbe jeu du compteur :
+  <div id="jeu"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+<script  src="script.js"></script> <!-- type="text/javascript" non necessaire -->
+</body>
+</html>

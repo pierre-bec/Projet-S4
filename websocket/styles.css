@@ -1,0 +1,138 @@
+#chat{
+	box-sizing: content-box;
+	border :3px solid ;
+	background-color:#fafafa80;
+	padding: 24px;
+	margin-right: 10%;
+	width: 80%;
+	height: 200%;
+	z-index: 2;
+
+
+}
+.boxDeDiscussion{
+	margin-left: 50%;
+	margin-top: 10%;
+	width : 50%;
+	height : 20%; 
+	z-index: 2;
+
+}
+
+div,from{
+	margin-right: 10%;
+}
+
+.msgChat{
+	width:400px;
+}
+
+#jeu{
+	width : 200px;
+	height : 200px; 
+	border :3px solid;
+}
+
+.invisible{
+	display:none;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+.boutonVote{
+	width:50px !important;
+}
+
+.desactiver{
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65); /*extension propriétaire inconnue mais utile */
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  }
+
+#imagefondJour{
+    background: url(../Projet/files/images/paysage.svg);
+    width: 100%;
+    height: 100vh;
+	background-size : cover;
+	/*filter: brightness(40%);
+	-webkit-filter: brightness(40%);
+	backdrop-filter: grayscale(1);*/		
+}
+
+#imagefondNuit{
+    background: url(../Projet/files/images/nuit.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size : cover;
+
+}
+
+/* pour la premier page */
+.page{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.mort{
+    color :red;
+}
+
+.vivant{
+    color:white;
+}
+
+#boxJoueurs{
+    border:3px solid;
+    margin-top:10%;
+    width:40%;
+    float:left;
+}
+
+#font{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+       
+  }
+
+input[type="button" i]{
+	border-radius: 45px;
+	width: 100%;
+	padding: 4px;
+}
+
+#menu {
+    position: fixed;
+    z-index: 100;
+    /* background-color: rgba(0,0,0,0); */
+	background-color: #030f3300 !important;
+}
+
+/* Scroll */ /*extension propriétaire inconnue mais utile */
+.Ascroll::-webkit-scrollbar {
+	width: 10px;
+  }
+   
+.Ascroll::-webkit-scrollbar-thumb {
+	background: #666;
+	border-radius: 20px;
+  }
+  
+.Ascroll::-webkit-scrollbar-track {
+	background: #ddd;
+	border-radius: 20px;
+  }
+
+.scroll{
+	overflow: auto;
+}
